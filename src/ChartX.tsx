@@ -30,7 +30,7 @@ const ChartX: React.FC = () => {
   
   const options = {
     title: { text: "Data X" },
-    grid: { top: 50, right: 30, bottom: 50, left: 80 },
+    grid: { top: 50, right: 30, bottom: 50, left: 80, width: '20%' },
     xAxis: {
       type: "category",
       data: dataX,
@@ -50,7 +50,7 @@ const ChartX: React.FC = () => {
     },
     yAxis: {
       type: "value",
-      max: 0.0002,
+      max: 0.002,
       name: "MAGNITUDE",
       nameLocation: "middle",
       nameGap: 60,

@@ -31,7 +31,7 @@ const ChartZ: React.FC = () => {
   const options = {
     title: { text: "Data Z" },
     color: "#379237",
-    grid: { top: 50, right: 30, bottom: 50, left: 80 },
+    grid: { top: 50, right: 30, bottom: 50, left: 80, width: "20%" },
     xAxis: {
       type: "category",
       data: dataX,
@@ -45,12 +45,13 @@ const ChartZ: React.FC = () => {
         //   showMaxLabel: true
         interval: 90,
         formatter: function (category: string) {
-          return category.substr(0, 2).replace(".", "");
+          return category.substr(0, 4).replace(".", "");
         },
       },
     },
     yAxis: {
       type: "value",
+      max: 0.002,
       name: "MAGNITUDE",
       nameLocation: "middle",
       nameGap: 60,

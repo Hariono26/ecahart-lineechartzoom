@@ -31,7 +31,7 @@ const ChartY: React.FC = () => {
   const options = {
     title: { text: "Data Y" },
     color: "#e5323e",
-    grid: { top: 50, right: 30, bottom: 50, left: 80 },
+    grid: { top: 50, right: 30, bottom: 50, left: 80, width: "20%" },
     xAxis: {
       type: "category",
       data: dataX,
@@ -51,6 +51,7 @@ const ChartY: React.FC = () => {
     },
     yAxis: {
       type: "value",
+      max: 0.002,
       name: "MAGNITUDE",
       nameLocation: "middle",
       nameGap: 60,
@@ -60,7 +61,6 @@ const ChartY: React.FC = () => {
     },
     dataZoom: [
       {
-        start: 0,
         type: "inside",
       },
     ],
