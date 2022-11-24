@@ -45,7 +45,7 @@ const ChartZ: React.FC = () => {
         //   showMaxLabel: true
         interval: 90,
         formatter: function (category: string) {
-          return category.substr(0, 4).replace(".", "");
+          return category.substr(0, 2).replace(".", "");
         },
       },
     },
